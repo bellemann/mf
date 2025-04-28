@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Neue Montreal'; /* Name you’ll use in CSS */
+    src: url('https://cdn.jsdelivr.net/gh/bellemann/fonts@latest/PPNeueMontreal-Variable.ttf') format('ttf'),
+    font-weight: normal; /* Specify weight, e.g., 400, 700 */
+    font-style: normal; /* Specify style, e.g., normal, italic */
+}
+
+body {
+    font-family: 'Neue Montreal', sans-serif; /* Fallback font */
+}
