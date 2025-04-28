@@ -8,4 +8,5 @@
 body {
     font-family: 'Neue Montreal', sans-serif; /* Fallback font */
     font-feature-settings: "ss02";
+    font-variation-settings: "ss02" 2;
 }
