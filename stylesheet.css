@@ -7,4 +7,5 @@
 
 body {
     font-family: 'Neue Montreal', sans-serif; /* Fallback font */
+    font-feature-settings: "ss01";
 }
