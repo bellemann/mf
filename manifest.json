@@ -1,0 +1,20 @@
+{
+  "name": "Myfeetish",
+  "short_name": "Myfeetish",
+  "start_url": "/app/f/explore",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "https://ucarecdn.com/aa0a4dcf-e1fb-4b3d-b9f9-d21966aefe32/-/format/png/",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://ucarecdn.com/5b453dfd-4d1a-4090-b456-32091f8b87ae/-/format/png/",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
