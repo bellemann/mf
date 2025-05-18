@@ -241,6 +241,11 @@ button.brand {
   margin-right: auto;
 }
 
+.blur{
+background: var(--theme-background-blur);
+backdrop-filter: blur(30px);
+}
+
 /* ================================
    SCROLLBAR HIDING
 ================================ */
