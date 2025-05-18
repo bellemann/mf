@@ -1,0 +1,255 @@
+/* ================================
+   CSS VARIABLES (Spacing Scale)
+================================ */
+:root {
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 4rem;
+  --space-10: 5rem;
+
+
+  /* Border radius */
+  --border-radius-main: 0.5rem;
+
+  /* Misc */
+  interpolate-size: allow-keywords;
+}
+
+/* ================================
+   COLOR PALETTE (Base Variables)
+   Define real colors here
+================================ */
+:root {
+  /* Light theme palette */
+  --light-background-1: #ffffff;
+  --light-background-2: #f5f5f5;
+  --light-foreground-1: #000000;
+  --light-foreground-2: #333333;
+  --light-border: #e0e0e0;
+  --light-brand: #007aff;
+  --light-brand-foreground: #ffffff;
+  --light-background-blur: rgba(255, 255, 255, 0.6);
+  --light-theme-background-alpha: rgba(255, 255, 255, 0.85);
+  --light-background-active: #e6f0ff;
+
+  /* Dark theme palette */
+  --dark-background-1: #121212;
+  --dark-background-2: #1e1e1e;
+  --dark-foreground-1: #ffffff;
+  --dark-foreground-2: #bbbbbb;
+  --dark-border: #333333;
+  --dark-brand: #0a84ff;
+  --dark-brand-foreground: #ffffff;
+  --dark-background-blur: rgba(18, 18, 18, 0.6);
+  --dark-theme-background-alpha: rgba(18, 18, 18, 0.85);
+  --dark-background-active: #1a1f2b;
+}
+
+
+
+/* ================================
+   ACTIVE THEME (via data-theme attr)
+   Automatically applied to :root or body
+================================ */
+[data-theme="light"] {
+  --theme-background-1: var(--light-background-1);
+  --theme-background-2: var(--light-background-2);
+  --theme-foreground-1: var(--light-foreground-1);
+  --theme-foreground-2: var(--light-foreground-2);
+  --theme-border: var(--light-border);
+  --theme-brand: var(--light-brand);
+  --theme-brand-foreground: var(--light-brand-foreground);
+  --theme-background-blur: var(--light-background-blur);
+  --theme-background-alpha: var(--light-theme-background-alpha);
+  --theme-background-active: var(--light-background-active);
+}
+
+[data-theme="dark"] {
+  --theme-background-1: var(--dark-background-1);
+  --theme-background-2: var(--dark-background-2);
+  --theme-foreground-1: var(--dark-foreground-1);
+  --theme-foreground-2: var(--dark-foreground-2);
+  --theme-border: var(--dark-border);
+  --theme-brand: var(--dark-brand);
+  --theme-brand-foreground: var(--dark-brand-foreground);
+  --theme-background-blur: var(--dark-background-blur);
+  --theme-background-alpha: var(--dark-theme-background-alpha);
+  --theme-background-active: var(--dark-background-active);
+}
+
+/* Optional: default fallback */
+[data-theme=""] {
+  --theme-background-1: var(--light-background-1);
+  --theme-background-2: var(--light-background-2);
+  --theme-foreground-1: var(--light-foreground-1);
+  --theme-foreground-2: var(--light-foreground-2);
+  --theme-border: var(--light-border);
+  --theme-brand: var(--light-brand);
+  --theme-brand-foreground: var(--light-brand-foreground);
+  --theme-background-blur: var(--light-background-blur);
+  --theme-background-alpha: var(--light-theme-background-alpha);
+  --theme-background-active: var(--light-background-active); /* fixed typo: was using dark-active here */
+}
+
+
+
+/* ================================
+   SPACING UTILITIES
+================================ */
+
+/* Margin Bottom */
+.mb1 { margin-bottom: var(--space-1); }
+.mb2 { margin-bottom: var(--space-2); }
+.mb3 { margin-bottom: var(--space-3); }
+.mb4 { margin-bottom: var(--space-4); }
+.mb5 { margin-bottom: var(--space-5); }
+.mb6 { margin-bottom: var(--space-6); }
+.mb7 { margin-bottom: var(--space-7); }
+.mb8 { margin-bottom: var(--space-8); }
+
+/* Margin Top */
+.mt1 { margin-top: var(--space-1); }
+.mt2 { margin-top: var(--space-2); }
+.mt3 { margin-top: var(--space-3); }
+.mt4 { margin-top: var(--space-4); }
+.mt5 { margin-top: var(--space-5); }
+.mt6 { margin-top: var(--space-6); }
+.mt7 { margin-top: var(--space-7); }
+.mt8 { margin-top: var(--space-8); } /* corrected class from mt9 to mt8 */
+
+/* ================================
+   TYPOGRAPHY
+================================ */
+
+body {
+  background: var(--theme-background-1);
+  font-family: Inter, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+a, input, button {
+  touch-action: manipulation;
+}
+
+/* Paragraphs */
+p {
+  color: var(--theme-foreground-2);
+  letter-spacing: -0.01em;
+}
+
+p.small {
+  font-size: 0.875rem;
+  letter-spacing: 0;
+}
+
+p.large {
+  font-size: 1.125rem;
+  letter-spacing: -0.01em;
+}
+
+.weight-medium { font-weight: 500; }
+.weight-bold { font-weight: 600; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--theme-foreground-1);
+  letter-spacing: -0.04em;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+/* Vertical rhythm correction (bleed fix) */
+:is([class*="u-text-style-"], h1, h2, h3, h4, h5, h6, p, blockquote) {
+  display: flow-root;
+}
+
+:is([class*="u-text-style-"], h1, h2, h3, h4, h5, h6, p, blockquote)::before {
+  content: "";
+  display: table;
+  margin-bottom: calc(-0.5lh + 0.37em);
+}
+
+:is([class*="u-text-style-"], h1, h2, h3, h4, h5, h6, p, blockquote)::after {
+  content: "";
+  display: table;
+  margin-bottom: calc(-0.5lh + 0.36em);
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+button {
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  background: var(--theme-foreground-1);
+  color: var(--theme-background-2);
+  border-radius: var(--border-radius-main) !important;
+  display: inline-flex;
+  cursor: pointer;
+  border: none;
+}
+
+/* Small button */
+button.small {
+  padding: 0.5rem 0.75rem;
+}
+
+/* Secondary button */
+button.secondary {
+  background: var(--theme-background-2);
+  color: var(--theme-foreground-1);
+}
+
+/* Brand / primary color button */
+button.brand {
+  background: var(--theme-brand);
+  color: var(--theme-brand-foreground);
+}
+
+/* ================================
+   LAYOUT HELPERS
+================================ */
+
+/* Responsive content max width */
+.desktop-max-width {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================================
+   SCROLLBAR HIDING
+================================ */
+
+/* Hide scrollbars (cross-browser) */
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+body {
+  -ms-overflow-style: none; /* IE/Edge */
+}
