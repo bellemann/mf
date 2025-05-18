@@ -131,6 +131,7 @@ h6 {
 font-size: 1rem;
 }
 
+<style>
 :is([class*="u-text-style-"], h1, h2, h3, h4, h5, h6, p, blockquote) {
 	display: flow-root;
 }
@@ -144,7 +145,7 @@ font-size: 1rem;
 	display: table;
 	margin-bottom: calc(-0.5lh + 0.36em);
 }
-
+</style>
 /* primary btn */
 button {
 align-items: center;
