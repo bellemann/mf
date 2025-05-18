@@ -246,6 +246,11 @@ background: var(--theme-background-blur);
 backdrop-filter: blur(30px);
 }
 
+uc-img {
+  --uc-img-pubkey: 'ea81f1c0373736a27431';
+}
+
+
 /* ================================
    SCROLLBAR HIDING
 ================================ */
