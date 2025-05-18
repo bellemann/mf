@@ -13,6 +13,9 @@
   --space-9: 4rem;
   --space-10: 5rem;
 
+   /* nav bar height */
+--nav-height: 2.5rem;
+--bottom-nav-height: 3rem;
 
   /* Border radius */
   --border-radius-main: 0.5rem;
