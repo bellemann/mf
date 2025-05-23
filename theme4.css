@@ -35,11 +35,15 @@
   --light-foreground-1: #000000;
   --light-foreground-2: #333333;
   --light-border: #e0e0e0;
-  --light-brand: #007aff;
+  --light-brand: #1D9BF0;
   --light-brand-foreground: #ffffff;
   --light-background-blur: rgba(255, 255, 255, 0.6);
   --light-theme-background-alpha: rgba(255, 255, 255, 0.85);
   --light-background-active: #e6f0ff;
+   --light-success-background: #CCE5DD;
+   --light-success-foreground: #168254;
+    --light-error-background: #E9DAE1;
+   --light-error-foreground: #B91F66;
 
   /* Dark theme palette */
   --dark-background-1: #121212;
@@ -47,11 +51,15 @@
   --dark-foreground-1: #ffffff;
   --dark-foreground-2: #bbbbbb;
   --dark-border: #333333;
-  --dark-brand: #0a84ff;
+  --dark-brand: #1D9BF0;
   --dark-brand-foreground: #ffffff;
   --dark-background-blur: rgba(18, 18, 18, 0.6);
   --dark-theme-background-alpha: rgba(18, 18, 18, 0.85);
   --dark-background-active: #1a1f2b;
+   --dark-success-background: #05130D;
+   --dark-success-foreground: #00CD89;
+   --dark-error-background: #1A050D;
+   --dark-error-foreground: #F91980;
 }
 
 
@@ -204,12 +212,11 @@ button {
   align-items: center;
   justify-content: center;
   padding: 0.75rem 1rem;
-  font-weight: 600;
+  font-weight: 500;
   background: var(--theme-foreground-1);
   color: var(--theme-background-2);
-  border-radius: var(--border-radius-main) !important;
+  border-radius: var(--border-radius-round) !important;
   display: inline-flex;
-  cursor: pointer;
   border: none;
 }
 
