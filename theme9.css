@@ -43,12 +43,12 @@
   --light-secondary-text: #666666;
   --light-primary-text: #171717;
    --light-background-blur: #ffffffe6;
-  --light-background-green: #EAFAEA;
-  --light-text-green: #297C3B;
+  --light-background-green: #EFFBEF;
+  --light-text-green: #00B45A;
   --light-background-red: #FFEBEB;
-  --light-text-red: #CA2A30;
+  --light-text-red: #E1103A;
   --light-background-blue: #EDF6FF;
-  --light-text-blue: #0067D6;
+  --light-text-blue: #0072F5;
 
   /* Dark theme palette */
   --dark-default-background: #000000;
@@ -64,12 +64,12 @@
   --dark-secondary-text: #A0A0A0;
   --dark-primary-text: #EDEDED;
    --dark-background-blur: #000000e6;
-  --dark-background-green: #0B2211;
-  --dark-text-green: #63C174;
-  --dark-background-red: #2A1314;
-  --dark-text-red: #FF6369;
-  --dark-background-blue: #0F1B2D;
-  --dark-text-blue: #52A9FF;
+  --dark-background-green: #061109;
+  --dark-text-green: #19F989;
+  --dark-background-red: #150A0A;
+  --dark-text-red: #F91946;
+  --dark-background-blue: #080E17;
+  --dark-text-blue: #19B2F9;
 }
 
 /* ================================
