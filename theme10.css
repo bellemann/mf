@@ -175,7 +175,7 @@
 ================================ */
 
 body {
-  background: var(--theme-background-1);
+  background: var(--default-background);
   font-family: Inter, sans-serif;
   margin: 0;
   padding: 0;
@@ -192,7 +192,7 @@ a, input, button {
 
 /* Paragraphs */
 p {
-  color: var(--theme-foreground-2);
+  color: var(--secondary-text);
   letter-spacing: -0.01em;
 }
 
@@ -212,7 +212,7 @@ p.large {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
-  color: var(--theme-foreground-1);
+  color: var(--primary-text);
   letter-spacing: -0.04em;
 }
 
@@ -249,8 +249,8 @@ button {
   justify-content: center;
   padding: 0.75rem 1rem;
   font-weight: 500;
-  background: var(--theme-foreground-1);
-  color: var(--theme-background-2);
+  background: var(--primary-text);
+  color: var(--default-background);
   border-radius: var(--border-radius-round) !important;
   display: inline-flex;
   border: none;
@@ -263,13 +263,13 @@ button.small {
 
 /* Secondary button */
 button.secondary {
-  background: var(--theme-background-2);
-  color: var(--theme-foreground-1);
+  background: var(--secondary-background);
+  color: var(--primary-text);
 }
 
 /* Brand / primary color button */
 button.brand {
-  background: var(--theme-brand);
+  background: var(--brand);
   color: var(--theme-brand-foreground);
 }
 
@@ -285,7 +285,7 @@ button.brand {
 }
 
 .blur{
-background: var(--theme-background-blur);
+background: var(--background-blur);
 backdrop-filter: blur(40px);
 }
 
