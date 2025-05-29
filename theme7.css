@@ -30,83 +30,114 @@
 ================================ */
 :root {
   /* Light theme palette */
-  --light-background-1: #ffffff;
-  --light-background-2: #f5f5f5;
-  --light-foreground-1: #000000;
-  --light-foreground-2: #333333;
-  --light-border: #e0e0e0;
-  --light-brand: #1D9BF0;
-  --light-brand-foreground: #ffffff;
-  --light-background-blur: rgba(255, 255, 255, 0.8);
-  --light-theme-background-alpha: rgba(255, 255, 255, 0.85);
-  --light-background-active: #e6f0ff;
-   --light-success-background: #CCE5DD;
-   --light-success-foreground: #168254;
-    --light-error-background: #E9DAE1;
-   --light-error-foreground: #B91F66;
+  --light-default-background: #fff;
+  --light-secondary-background: #F9FAFB;
+  --light-component-background: #F2F2F2;
+  --light-component-background-hover: #EBEBEB;
+  --light-component-background-active: #E6E6E6;
+  --light-default-border:#EAEAEA;
+  --light-hover-border: #C9C9C9;
+  --light-active-border: #A8A8A8;
+  --light-high-contrast-background: #8F8F8F;
+  --light-hover-high-contrast-background: #7D7D7D;
+  --light-secondary-text: #666666;
+  --light-primary-text: #171717;
+  --light-background-green: #EAFAEA;
+  --light-text-green: #297C3B;
+  --light-background-red: #FFEBEB;
+  --light-text-red: #CA2A30;
+  --light-background-blue: #EDF6FF;
+  --light-text-blue: #0067D6;
 
   /* Dark theme palette */
-  --dark-background-1: #121212;
-  --dark-background-2: #1e1e1e;
-  --dark-foreground-1: #ffffff;
-  --dark-foreground-2: #bbbbbb;
-  --dark-border: #333333;
-  --dark-brand: #1D9BF0;
-  --dark-brand-foreground: #ffffff;
-  --dark-background-blur: rgba(18, 18, 18, 0.8);
-  --dark-theme-background-alpha: rgba(18, 18, 18, 0.85);
-  --dark-background-active: #1a1f2b;
-   --dark-success-background: #05130D;
-   --dark-success-foreground: #00CD89;
-   --dark-error-background: #1A050D;
-   --dark-error-foreground: #F91980;
+  --dark-default-background: #000000;
+  --dark-secondary-background: #0A0A0A;
+  --dark-component-background: #1A1A1A;
+  --dark-component-background-hover: #1A1A1A;
+  --dark-component-background-active: #292929;
+  --dark-default-border: #2E2E2E;
+  --dark-hover-border: #454545;
+  --dark-active-border: #878787;
+  --dark-high-contrast-background: #8F8F8F;
+  --dark-hover-high-contrast-background: #7D7D7D;
+  --dark-secondary-text: #A0A0A0;
+  --dark-primary-text: #EDEDED;
+  --dark-background-green: #0B2211;
+  --dark-text-green: #63C174;
+  --dark-background-red: #2A1314;
+  --dark-text-red: #FF6369;
+  --dark-background-blue: #0F1B2D;
+  --dark-text-blue: #52A9FF;
 }
-
-
 
 /* ================================
    ACTIVE THEME (via data-theme attr)
    Automatically applied to :root or body
 ================================ */
 [data-theme="light"] {
-  --theme-background-1: var(--light-background-1);
-  --theme-background-2: var(--light-background-2);
-  --theme-foreground-1: var(--light-foreground-1);
-  --theme-foreground-2: var(--light-foreground-2);
-  --theme-border: var(--light-border);
-  --theme-brand: var(--light-brand);
-  --theme-brand-foreground: var(--light-brand-foreground);
-  --theme-background-blur: var(--light-background-blur);
-  --theme-background-alpha: var(--light-theme-background-alpha);
-  --theme-background-active: var(--light-background-active);
+  --default-background: var(--light-default-background);
+  --secondary-background: var(--light-secondary-background);
+  --component-background: var(--light-component-background);
+  --component-background-hover: var(--light-component-background-hover);
+  --component-background-active: var(--light-component-background-active);
+  --default-border: var(--light-default-border);
+  --hover-border: var(--light-hover-border);
+  --active-border: var(--light-active-border);
+  --high-contrast-background: var(--light-high-contrast-background);
+  --hover-high-contrast-background: var(--light-hover-high-contrast-background);
+  --secondary-text: var(--light-secondary-text);
+  --primary-text: var(--light-primary-text);
+  --background-green: var(--light-background-green);
+  --text-green: var(--light-text-green);
+  --background-red: var(--light-background-red);
+  --text-red: var(--light-text-red);
+  --background-blue: var(--light-background-blue);
+  --text-blue: var(--light-text-blue);
 }
 
 [data-theme="dark"] {
-  --theme-background-1: var(--dark-background-1);
-  --theme-background-2: var(--dark-background-2);
-  --theme-foreground-1: var(--dark-foreground-1);
-  --theme-foreground-2: var(--dark-foreground-2);
-  --theme-border: var(--dark-border);
-  --theme-brand: var(--dark-brand);
-  --theme-brand-foreground: var(--dark-brand-foreground);
-  --theme-background-blur: var(--dark-background-blur);
-  --theme-background-alpha: var(--dark-theme-background-alpha);
-  --theme-background-active: var(--dark-background-active);
+  --default-background: var(--dark-default-background);
+  --secondary-background: var(--dark-secondary-background);
+  --component-background: var(--dark-component-background);
+  --component-background-hover: var(--dark-component-background-hover);
+  --component-background-active: var(--dark-component-background-active);
+  --default-border: var(--dark-default-border);
+  --active-border: var(--dark-active-border);
+  --hover-border: var(--dark-hover-border);
+  --high-contrast-background: var(--dark-high-contrast-background);
+  --hover-high-contrast-background: var(--dark-hover-high-contrast-background);
+  --secondary-text: var(--dark-secondary-text);
+  --primary-text: var(--dark-primary-text);
+  --background-green: var(--dark-background-green);
+  --text-green: var(--dark-text-green);
+  --background-red: var(--dark-background-red);
+  --text-red: var(--dark-text-red);
+  --background-blue: var(--dark-background-blue);
+  --text-blue: var(--dark-text-blue);
 }
 
 /* Optional: default fallback */
 [data-theme=""] {
-  --theme-background-1: var(--light-background-1);
-  --theme-background-2: var(--light-background-2);
-  --theme-foreground-1: var(--light-foreground-1);
-  --theme-foreground-2: var(--light-foreground-2);
-  --theme-border: var(--light-border);
-  --theme-brand: var(--light-brand);
-  --theme-brand-foreground: var(--light-brand-foreground);
-  --theme-background-blur: var(--light-background-blur);
-  --theme-background-alpha: var(--light-theme-background-alpha);
-  --theme-background-active: var(--light-background-active); /* fixed typo: was using dark-active here */
+  --default-background: var(--light-default-background);
+  --secondary-background: var(--light-secondary-background);
+  --component-background: var(--light-component-background);
+  --component-background-hover: var(--light-component-background-hover);
+  --component-background-active: var(--light-component-background-active);
+  --default-border: var(--light-default-border);
+  --hover-border: var(--light-hover-border);
+  --active-border: var(--light-active-border);
+  --high-contrast-background: var(--light-high-contrast-background);
+  --hover-high-contrast-background: var(--light-hover-high-contrast-background);
+  --secondary-text: var(--light-secondary-text);
+  --primary-text: var(--light-primary-text);
+  --background-green: var(--light-background-green);
+  --text-green: var(--light-text-green);
+  --background-red: var(--light-background-red);
+  --text-red: var(--light-text-red);
+  --background-blue: var(--light-background-blue);
+  --text-blue: var(--light-text-blue);
 }
+
 
 
 
