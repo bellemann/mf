@@ -250,7 +250,7 @@ button.brand {
 
 .blur{
 background: var(--theme-background-blur);
-backdrop-filter: blur(30px);
+backdrop-filter: blur(40px);
 }
 
 uc-img {
