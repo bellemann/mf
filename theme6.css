@@ -37,7 +37,7 @@
   --light-border: #e0e0e0;
   --light-brand: #1D9BF0;
   --light-brand-foreground: #ffffff;
-  --light-background-blur: rgba(255, 255, 255, 0.6);
+  --light-background-blur: rgba(255, 255, 255, 0.8);
   --light-theme-background-alpha: rgba(255, 255, 255, 0.85);
   --light-background-active: #e6f0ff;
    --light-success-background: #CCE5DD;
@@ -53,7 +53,7 @@
   --dark-border: #333333;
   --dark-brand: #1D9BF0;
   --dark-brand-foreground: #ffffff;
-  --dark-background-blur: rgba(18, 18, 18, 0.6);
+  --dark-background-blur: rgba(18, 18, 18, 0.8);
   --dark-theme-background-alpha: rgba(18, 18, 18, 0.85);
   --dark-background-active: #1a1f2b;
    --dark-success-background: #05130D;
