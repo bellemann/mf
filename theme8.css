@@ -42,6 +42,7 @@
   --light-hover-high-contrast-background: #7D7D7D;
   --light-secondary-text: #666666;
   --light-primary-text: #171717;
+   --light-background-blur: #ffffffe6;
   --light-background-green: #EAFAEA;
   --light-text-green: #297C3B;
   --light-background-red: #FFEBEB;
@@ -62,6 +63,7 @@
   --dark-hover-high-contrast-background: #7D7D7D;
   --dark-secondary-text: #A0A0A0;
   --dark-primary-text: #EDEDED;
+   --dark-background-blur: #000000e6;
   --dark-background-green: #0B2211;
   --dark-text-green: #63C174;
   --dark-background-red: #2A1314;
@@ -87,6 +89,7 @@
   --hover-high-contrast-background: var(--light-hover-high-contrast-background);
   --secondary-text: var(--light-secondary-text);
   --primary-text: var(--light-primary-text);
+--background-blur: var(--light-background-blur);
   --background-green: var(--light-background-green);
   --text-green: var(--light-text-green);
   --background-red: var(--light-background-red);
@@ -108,6 +111,7 @@
   --hover-high-contrast-background: var(--dark-hover-high-contrast-background);
   --secondary-text: var(--dark-secondary-text);
   --primary-text: var(--dark-primary-text);
+--background-blur: var(--dark-background-blur);
   --background-green: var(--dark-background-green);
   --text-green: var(--dark-text-green);
   --background-red: var(--dark-background-red);
@@ -118,24 +122,25 @@
 
 /* Optional: default fallback */
 [data-theme=""] {
-  --default-background: var(--light-default-background);
-  --secondary-background: var(--light-secondary-background);
-  --component-background: var(--light-component-background);
-  --component-background-hover: var(--light-component-background-hover);
-  --component-background-active: var(--light-component-background-active);
-  --default-border: var(--light-default-border);
-  --hover-border: var(--light-hover-border);
-  --active-border: var(--light-active-border);
-  --high-contrast-background: var(--light-high-contrast-background);
-  --hover-high-contrast-background: var(--light-hover-high-contrast-background);
-  --secondary-text: var(--light-secondary-text);
-  --primary-text: var(--light-primary-text);
-  --background-green: var(--light-background-green);
-  --text-green: var(--light-text-green);
-  --background-red: var(--light-background-red);
-  --text-red: var(--light-text-red);
-  --background-blue: var(--light-background-blue);
-  --text-blue: var(--light-text-blue);
+   --default-background: var(--dark-default-background);
+  --secondary-background: var(--dark-secondary-background);
+  --component-background: var(--dark-component-background);
+  --component-background-hover: var(--dark-component-background-hover);
+  --component-background-active: var(--dark-component-background-active);
+  --default-border: var(--dark-default-border);
+  --active-border: var(--dark-active-border);
+  --hover-border: var(--dark-hover-border);
+  --high-contrast-background: var(--dark-high-contrast-background);
+  --hover-high-contrast-background: var(--dark-hover-high-contrast-background);
+  --secondary-text: var(--dark-secondary-text);
+  --primary-text: var(--dark-primary-text);
+--background-blur: var(--dark-background-blur);
+  --background-green: var(--dark-background-green);
+  --text-green: var(--dark-text-green);
+  --background-red: var(--dark-background-red);
+  --text-red: var(--dark-text-red);
+  --background-blue: var(--dark-background-blue);
+  --text-blue: var(--dark-text-blue);
 }
 
 
