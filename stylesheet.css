@@ -1,0 +1,32 @@
+@font-face {
+    font-family: '.';
+    src: url('subset-fcac592b43e4e820b0b3606d9e4f984c.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '.';
+    src: url('subset-fe27e483a3b3d3909da02bf99ee2134d.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Basier Square';
+    src: url('subset-BasierSquare-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '.';
+    src: url('subset-195b31974db0a7dfe2233a780384e91b.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
