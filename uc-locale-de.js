@@ -3,7 +3,7 @@ export default {
   'social-source-lang': 'de',
   'upload-file': 'Datei hochladen',
   'upload-files': 'Dateien hochladen',
-  'choose-file': 'Tippe um ein Bil auszuwählen',
+  'choose-file': 'Tippe um ein Bild auszuwählen',
   'choose-files': 'Tippe um Bilder auszuwählen',
   'drop-files-here': 'Bilder hier ablegen',
   'select-file-source': 'Dateiquelle auswählen',
