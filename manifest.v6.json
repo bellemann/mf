@@ -2,7 +2,7 @@
   "gcm_sender_id": "103953800507",
   "name": "Myfeetish",
   "short_name": "Myfeetish",
-  "start_url": "/",
+  "start_url": "/app/feed",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
